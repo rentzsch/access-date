@@ -1,5 +1,5 @@
  /*******************************************************************************
-	main.c
+	access_date.c
 		Copyright (c) 2007 Jonathan 'Wolf' Rentzsch: <http://rentzsch.com>
 		Some rights reserved: <http://creativecommons.org/licenses/by/2.0/>
 
