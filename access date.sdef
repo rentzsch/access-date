@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dictionary SYSTEM "file://localhost/System/Library/DTDs/sdef.dtd">
+<dictionary title="Dictionary">
+	<suite name="Red Shed Software Suite" code="RShd" description="A suite of AppleScript Additions from Red Shed Software">
+		<command name="unix access date" code="RShdUAcc" description="returns a file or folder&apos;s last unix (stat(2)) access date">
+			<direct-parameter description="an alias or file reference to the file or folder" type="file"/>
+			<result description="the specified file or folder&apos;s last access date" type="date"/>
+		</command>
+		<command name="metadata access date" code="RShdMAcc" description="returns a file or folder&apos;s last metadata (kMDItemLastUsedDate) access date">
+			<direct-parameter description="an alias or file reference to the file or folder" type="file"/>
+			<result description="the specified file or folder&apos;s last access date" type="date"/>
+		</command>
+	</suite>
+</dictionary>
