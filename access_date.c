@@ -119,15 +119,19 @@ OSErr MetadataAccessDataEventHandler(const AppleEvent *event, AppleEvent *reply,
 	CFStringRef fspathStr = NULL;
 	if (!err) {
 		fspathStr = CFStringCreateWithFileSystemRepresentation(kCFAllocatorDefault, fspath);
-		if (!fspathStr)
+		if (!fspathStr) {
+			//fprintf(stderr, "^^CFStringCreateWithFileSystemRepresentation(kCFAllocatorDefault, \"%s\") failed\n", fspath);
 			err = coreFoundationUnknownErr;
+		}
 	}
 	//	CFString path -> MDItem.
 	MDItemRef mdItem = NULL;
 	if (!err) {
 		mdItem = MDItemCreate(kCFAllocatorDefault, fspathStr);
-		if (!mdItem)
+		if (!mdItem) {
+			//fprintf(stderr, "^^MDItemCreate(kCFAllocatorDefault, \"%s\") failed\n", fspath);
 			err = coreFoundationUnknownErr;
+		}
 	}
 	/*
 	CFArrayRef attributeNames = NULL;
@@ -139,8 +143,10 @@ OSErr MetadataAccessDataEventHandler(const AppleEvent *event, AppleEvent *reply,
 	CFDateRef lastUsedDate = NULL;
 	if (!err) {
 		lastUsedDate = MDItemCopyAttribute(mdItem, kMDItemLastUsedDate);
-		if (!lastUsedDate)
+		if (!lastUsedDate) {
+			//fprintf(stderr, "^^MDItemCopyAttribute(mdItem, kMDItemLastUsedDate) failed\n");
 			err = coreFoundationUnknownErr;
+		}
 	}
 	LongDateTime time;
 	if (!err) {

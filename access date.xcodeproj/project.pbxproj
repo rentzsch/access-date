@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 42;
+	objectVersion = 44;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -121,10 +121,12 @@
 /* Begin PBXProject section */
 		089C1669FE841209C02AAC07 /* Project object */ = {
 			isa = PBXProject;
-			buildConfigurationList = 796BAFA90BE914AF008B1663 /* Build configuration list for PBXProject "Skeleton Addition" */;
+			buildConfigurationList = 796BAFA90BE914AF008B1663 /* Build configuration list for PBXProject "access date" */;
+			compatibilityVersion = "Xcode 3.0";
 			hasScannedForEncodings = 1;
 			mainGroup = 089C166AFE841209C02AAC07 /* Transform Window */;
 			projectDirPath = "";
+			projectRoot = "";
 			targets = (
 				3B02307704CEFC3B00222988 /* Skeleton Addition */,
 			);
@@ -176,9 +178,15 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		796BAFA60BE914AF008B1663 /* Development */ = {
+		796BAFA60BE914AF008B1663 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					ppc,
+					ppc64,
+					i386,
+					x86_64,
+				);
 				COPY_PHASE_STRIP = NO;
 				EXPORTED_SYMBOLS_FILE = osax.exp;
 				FRAMEWORK_SEARCH_PATHS = "";
@@ -192,7 +200,6 @@
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "~/Library/ScriptingAdditions";
 				LIBRARY_SEARCH_PATHS = "";
-				OPTIMIZATION_CFLAGS = "-O2";
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "-i .";
@@ -202,11 +209,17 @@
 				WRAPPER_EXTENSION = osax;
 				ZERO_LINK = YES;
 			};
-			name = Development;
+			name = Debug;
 		};
-		796BAFA70BE914AF008B1663 /* Deployment */ = {
+		796BAFA70BE914AF008B1663 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					ppc,
+					ppc64,
+					i386,
+					x86_64,
+				);
 				COPY_PHASE_STRIP = YES;
 				EXPORTED_SYMBOLS_FILE = osax.exp;
 				FRAMEWORK_SEARCH_PATHS = "";
@@ -227,47 +240,21 @@
 				WRAPPER_EXTENSION = osax;
 				ZERO_LINK = NO;
 			};
-			name = Deployment;
+			name = Release;
 		};
-		796BAFA80BE914AF008B1663 /* Default */ = {
+		796BAFAA0BE914AF008B1663 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				EXPORTED_SYMBOLS_FILE = osax.exp;
-				FRAMEWORK_SEARCH_PATHS = "";
-				GCC_OPTIMIZATION_LEVEL = 2;
-				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
-				GCC_WARN_UNKNOWN_PRAGMAS = NO;
-				HEADER_SEARCH_PATHS = "";
-				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "~/Library/ScriptingAdditions";
-				LIBRARY_SEARCH_PATHS = "";
-				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = "";
-				OTHER_REZFLAGS = "-i .";
-				PRODUCT_NAME = "access date";
-				SECTORDER_FLAGS = "";
-				WARNING_CFLAGS = "-Wmost";
-				WRAPPER_EXTENSION = osax;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
 			};
-			name = Default;
+			name = Debug;
 		};
-		796BAFAA0BE914AF008B1663 /* Development */ = {
+		796BAFAB0BE914AF008B1663 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
 			};
-			name = Development;
-		};
-		796BAFAB0BE914AF008B1663 /* Deployment */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = Deployment;
-		};
-		796BAFAC0BE914AF008B1663 /* Default */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = Default;
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -275,22 +262,20 @@
 		796BAFA50BE914AF008B1663 /* Build configuration list for PBXNativeTarget "Skeleton Addition" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				796BAFA60BE914AF008B1663 /* Development */,
-				796BAFA70BE914AF008B1663 /* Deployment */,
-				796BAFA80BE914AF008B1663 /* Default */,
+				796BAFA60BE914AF008B1663 /* Debug */,
+				796BAFA70BE914AF008B1663 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Default;
+			defaultConfigurationName = Debug;
 		};
-		796BAFA90BE914AF008B1663 /* Build configuration list for PBXProject "Skeleton Addition" */ = {
+		796BAFA90BE914AF008B1663 /* Build configuration list for PBXProject "access date" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				796BAFAA0BE914AF008B1663 /* Development */,
-				796BAFAB0BE914AF008B1663 /* Deployment */,
-				796BAFAC0BE914AF008B1663 /* Default */,
+				796BAFAA0BE914AF008B1663 /* Debug */,
+				796BAFAB0BE914AF008B1663 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Default;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
