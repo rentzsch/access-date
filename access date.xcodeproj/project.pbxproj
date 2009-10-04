@@ -7,21 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3B02307904CEFC3B00222988 /* TermCodes.h in Headers */ = {isa = PBXBuildFile; fileRef = 00922F2800F29A4904C9176D /* TermCodes.h */; };
 		3B02307B04CEFC3B00222988 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
 		3B02307D04CEFC3B00222988 /* access_date.c in Sources */ = {isa = PBXBuildFile; fileRef = 08FB77B2FE8417CDC02AAC07 /* access_date.c */; settings = {ATTRIBUTES = (); }; };
 		3B02307F04CEFC3B00222988 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08EA7FFBFE8413EDC02AAC07 /* Carbon.framework */; };
-		3B02308104CEFC3B00222988 /* Terminology.r in Rez */ = {isa = PBXBuildFile; fileRef = 00922F2600F299B704C9176D /* Terminology.r */; };
+		794B8AEF1078970A00C7FCB6 /* access date.r in Rez */ = {isa = PBXBuildFile; fileRef = 794B8AEE1078970A00C7FCB6 /* access date.r */; };
+		79F057C910788A0500661A5A /* access date.sdef in Resources */ = {isa = PBXBuildFile; fileRef = 79F057C810788A0500661A5A /* access date.sdef */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		00922F2600F299B704C9176D /* Terminology.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; path = Terminology.r; sourceTree = "<group>"; };
-		00922F2800F29A4904C9176D /* TermCodes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = TermCodes.h; sourceTree = "<group>"; };
 		089C167EFE841241C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		08EA7FFBFE8413EDC02AAC07 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
 		08FB77B2FE8417CDC02AAC07 /* access_date.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = access_date.c; sourceTree = "<group>"; };
 		3B02308304CEFC3B00222988 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		3B02308404CEFC3C00222988 /* access date.osax */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "access date.osax"; sourceTree = BUILT_PRODUCTS_DIR; };
+		794B8AEE1078970A00C7FCB6 /* access date.r */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.rez; path = "access date.r"; sourceTree = "<group>"; };
+		79F057C810788A0500661A5A /* access date.sdef */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.sdef; path = "access date.sdef"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +43,6 @@
 				089C167CFE841241C02AAC07 /* Resources */,
 				089C1671FE841209C02AAC07 /* Frameworks */,
 				19C28FB4FE9D528D11CA2CBB /* Products */,
-				3B02308304CEFC3B00222988 /* Info.plist */,
 			);
 			name = "Transform Window";
 			sourceTree = "<group>";
@@ -59,8 +58,10 @@
 		089C167CFE841241C02AAC07 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				794B8AEE1078970A00C7FCB6 /* access date.r */,
+				79F057C810788A0500661A5A /* access date.sdef */,
+				3B02308304CEFC3B00222988 /* Info.plist */,
 				089C167DFE841241C02AAC07 /* InfoPlist.strings */,
-				00922F2600F299B704C9176D /* Terminology.r */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -69,7 +70,6 @@
 			isa = PBXGroup;
 			children = (
 				08FB77B2FE8417CDC02AAC07 /* access_date.c */,
-				00922F2800F29A4904C9176D /* TermCodes.h */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -89,7 +89,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B02307904CEFC3B00222988 /* TermCodes.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +103,7 @@
 				3B02307A04CEFC3B00222988 /* Resources */,
 				3B02307C04CEFC3B00222988 /* Sources */,
 				3B02307E04CEFC3B00222988 /* Frameworks */,
+				794B8ADF1078965B00C7FCB6 /* ShellScript */,
 				3B02308004CEFC3B00222988 /* Rez */,
 			);
 			buildRules = (
@@ -139,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B02307B04CEFC3B00222988 /* InfoPlist.strings in Resources */,
+				79F057C910788A0500661A5A /* access date.sdef in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,11 +150,29 @@
 			isa = PBXRezBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B02308104CEFC3B00222988 /* Terminology.r in Rez */,
+				794B8AEF1078970A00C7FCB6 /* access date.r in Rez */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXRezBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		794B8ADF1078965B00C7FCB6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"access date.sdef",
+			);
+			outputPaths = (
+				"access date.r",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This rule builds an 'aete' version of the sdef; it is only necessary for pre-Leopard builds.\n/usr/bin/sdp -fa -o \"${SRCROOT}/access date.r\" \"${SRCROOT}/access date.sdef\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3B02307C04CEFC3B00222988 /* Sources */ = {
@@ -183,12 +202,10 @@
 			buildSettings = {
 				ARCHS = (
 					ppc,
-					ppc64,
 					i386,
 					x86_64,
 				);
 				COPY_PHASE_STRIP = NO;
-				EXPORTED_SYMBOLS_FILE = osax.exp;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -216,12 +233,10 @@
 			buildSettings = {
 				ARCHS = (
 					ppc,
-					ppc64,
 					i386,
 					x86_64,
 				);
 				COPY_PHASE_STRIP = YES;
-				EXPORTED_SYMBOLS_FILE = osax.exp;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_OPTIMIZATION_LEVEL = 2;
